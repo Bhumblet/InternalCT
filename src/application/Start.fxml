@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="94.0" prefHeight="206.0" prefWidth="453.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="47.0">
+         <children>
+            <AnchorPane layoutX="346.0" layoutY="79.0" prefHeight="324.0" prefWidth="273.0" style="-fx-background-color: white; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="47.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="47.0">
+               <children>
+                  <Label layoutX="51.0" layoutY="39.0" text="Sign In ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField focusColor="#1a76a4" labelFloat="true" layoutX="51.0" layoutY="169.0" prefHeight="27.0" prefWidth="197.0" promptText="User Name" />
+                  <JFXPasswordField focusColor="#1a76a4" labelFloat="true" layoutX="51.0" layoutY="235.0" prefHeight="27.0" prefWidth="197.0" promptText="Password" />
+                  <JFXButton buttonType="RAISED" layoutX="70.0" layoutY="314.0" ripplerFill="WHITE" style="-fx-background-color: orange; -fx-background-radius: 1em;" text="Sign In" />
+                  <FontAwesomeIconView fill="#1a76a4" glyphName="USERS" layoutX="125.0" layoutY="130.0" size="45" />
+                  <JFXButton buttonType="RAISED" layoutX="173.0" layoutY="314.0" ripplerFill="WHITE" style="-fx-background-color: orange; -fx-background-radius: 1em;" text="Register" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="26.0" layoutY="153.0" prefHeight="443.0" prefWidth="368.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); -fx-background-radius: 1em;" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="272.0" AnchorPane.topAnchor="19.0">
+               <children>
+                  <VBox layoutX="78.0" layoutY="171.0" prefHeight="126.0" prefWidth="213.0">
+                     <children>
+                        <Label text="Internal">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="TOP_CENTER" prefHeight="20.0" prefWidth="213.0">
+                           <children>
+                              <Label prefHeight="23.0" prefWidth="155.0" text="Contact">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT" prefHeight="34.0" prefWidth="213.0">
+                           <children>
+                              <Label prefHeight="23.0" prefWidth="149.0" text="Tracing">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label text="Developed by: Brock Humblet" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
