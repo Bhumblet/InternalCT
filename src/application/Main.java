@@ -11,11 +11,10 @@ import javafx.fxml.FXMLLoader;
 
 
 public class Main extends Application {
-	Parent root;
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			root = FXMLLoader.load(getClass().getResource("Start.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("Start.fxml"));
 			Scene scene = new Scene(root);
 			primaryStage.initStyle(StageStyle.TRANSPARENT);
 			primaryStage.setScene(scene);

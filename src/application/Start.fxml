@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
       <AnchorPane layoutX="20.0" layoutY="94.0" prefHeight="206.0" prefWidth="453.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="47.0">
          <children>
@@ -25,21 +25,21 @@
                   <JFXPasswordField focusColor="#1a76a4" labelFloat="true" layoutX="51.0" layoutY="235.0" prefHeight="27.0" prefWidth="197.0" promptText="Password" />
                   <JFXButton buttonType="RAISED" layoutX="70.0" layoutY="314.0" ripplerFill="WHITE" style="-fx-background-color: orange; -fx-background-radius: 1em;" text="Sign In" />
                   <FontAwesomeIconView fill="#1a76a4" glyphName="USERS" layoutX="125.0" layoutY="130.0" size="45" />
-                  <JFXButton buttonType="RAISED" layoutX="173.0" layoutY="314.0" ripplerFill="WHITE" style="-fx-background-color: orange; -fx-background-radius: 1em;" text="Register" />
+                  <JFXButton buttonType="RAISED" layoutX="173.0" layoutY="314.0" onAction="#changeToRegisterScreen" ripplerFill="WHITE" style="-fx-background-color: orange; -fx-background-radius: 1em;" text="Register" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="26.0" layoutY="153.0" prefHeight="443.0" prefWidth="368.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); -fx-background-radius: 1em;" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="272.0" AnchorPane.topAnchor="19.0">
                <children>
                   <VBox layoutX="78.0" layoutY="171.0" prefHeight="126.0" prefWidth="213.0">
                      <children>
-                        <Label text="Internal">
+                        <Label text="Internal" textFill="WHITE">
                            <font>
                               <Font size="24.0" />
                            </font>
                         </Label>
                         <HBox alignment="TOP_CENTER" prefHeight="20.0" prefWidth="213.0">
                            <children>
-                              <Label prefHeight="23.0" prefWidth="155.0" text="Contact">
+                              <Label prefHeight="23.0" prefWidth="155.0" text="Contact" textFill="WHITE">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
@@ -48,14 +48,14 @@
                         </HBox>
                         <HBox alignment="TOP_RIGHT" prefHeight="34.0" prefWidth="213.0">
                            <children>
-                              <Label prefHeight="23.0" prefWidth="149.0" text="Tracing">
+                              <Label prefHeight="23.0" prefWidth="149.0" text="Tracing" textFill="WHITE">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
                               </Label>
                            </children>
                         </HBox>
-                        <Label text="Developed by: Brock Humblet" />
+                        <Label text="Developed by: Brock Humblet" textFill="WHITE" />
                      </children>
                   </VBox>
                </children>
